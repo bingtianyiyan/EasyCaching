@@ -46,6 +46,11 @@
         public const string HybridSection = "easycaching:hybrid";
 
         /// <summary>
+        /// The etcd section.
+        /// </summary>
+        public const string EtcdSection = "easycaching:etcd";
+
+        /// <summary>
         /// The redis bus section.
         /// </summary>
         public const string RedisBusSection = "easycaching:redisbus";
@@ -110,20 +115,26 @@
         /// The default name of the LiteDB.
         /// </summary>
         public const string DefaultLiteDBName = "DefaultLiteDB";
+
+        /// <summary>
+        /// The default name of the etcd.
+        /// </summary>
+        public const string DefaultEtcdName = "DefaultEtcd";
+
         /// <summary>
         /// The LiteDB Bus section.
         /// </summary>
-        public const string LiteDBSection= "easycaching:litedb";
+        public const string LiteDBSection = "easycaching:litedb";
 
         /// <summary>
         /// The default name of the FasterKv
         /// </summary>
         public const string DefaultFasterKvName = "DefaultFasterKvName";
-        
+
         /// <summary>
         /// The FasterKv section.
         /// </summary>
-        public const string FasterKvSection= "easycaching:fasterKv";
+        public const string FasterKvSection = "easycaching:fasterKv";
 
         public const string NotFoundCliExceptionMessage = "Can not find the matched client instance, client name is {0}";
 
