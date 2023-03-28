@@ -69,6 +69,17 @@
                         config.SerializerName = "msg";
                     })
                     .WithMessagePack("msg");
+
+
+                //use Etcd
+                option.UseEtcd(config =>
+                {
+                    config.Address = "http://127.0.0.1:2379";
+                    config.Timeout = 30000;
+                    // Etcd must be set SerializerName
+                    config.SerializerName = "json";
+                })
+                    .WithMessagePack("msg2").WithJson("json");
             });
         }
 
